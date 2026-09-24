@@ -28,3 +28,12 @@ jobs:
         run: node test/smoke.mjs
         env:
           PULSE_BINARY: ${{ steps.pulse.outputs.path }}
+  CI:
+    if: always()
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require all installation targets
+        env:
+          RESULT: ${{ needs.install.result }}
+        run: test "$RESULT" = success
