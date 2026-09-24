@@ -1,6 +1,7 @@
 name: Test installer
 on:
   push:
+    branches: ["**"]
   pull_request:
   workflow_dispatch:
 permissions:
@@ -23,7 +24,7 @@ jobs:
         id: pulse
         uses: ./
         with:
-          version: '0.4.0-rc.1'
+          version: '0.4.0-rc.2'
       - name: Verify real CLI and command measurement
         run: node test/smoke.mjs
         env:
