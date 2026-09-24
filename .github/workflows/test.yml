@@ -1,0 +1,30 @@
+name: Test installer
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, ubuntu-24.04-arm, macos-latest, macos-15-intel, windows-latest, windows-11-arm]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Installer unit tests
+        run: node --test test/installer.test.mjs
+      - name: Install public CLI
+        id: pulse
+        uses: ./
+        with:
+          version: '0.4.0-rc.1'
+      - name: Verify real CLI and command measurement
+        run: node test/smoke.mjs
+        env:
+          PULSE_BINARY: ${{ steps.pulse.outputs.path }}

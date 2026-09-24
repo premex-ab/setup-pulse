@@ -1,0 +1,19 @@
+name: Setup Pulse CLI
+description: Install a checksum-verified Pulse CLI to measure builds across tools and CI systems.
+author: Premex AB
+branding:
+  icon: activity
+  color: purple
+inputs:
+  version:
+    description: Exact CLI version included in this action's release manifest.
+    required: false
+    default: '0.4.0-rc.1'
+outputs:
+  version:
+    description: Installed CLI version.
+  path:
+    description: Absolute path to the installed Pulse executable.
+runs:
+  using: node24
+  main: index.mjs
