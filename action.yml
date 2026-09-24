@@ -8,7 +8,7 @@ inputs:
   version:
     description: Exact CLI version included in this action's release manifest.
     required: false
-    default: '0.4.0-rc.1'
+    default: '0.4.0-rc.2'
 outputs:
   version:
     description: Installed CLI version.

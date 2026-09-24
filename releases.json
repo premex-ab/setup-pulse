@@ -1,31 +1,31 @@
 {
-  "0.4.0-rc.1": {
-    "sourceCommit": "795490c7bb97fd048fa8725564fbdaba431a5102",
+  "0.4.0-rc.2": {
+    "sourceCommit": "7b36a8f7aac3c24ab68662a2d8bb0660f207a4aa",
     "goVersion": "go version go1.26.2 darwin/arm64",
     "artifacts": {
       "darwin-amd64": {
-        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.1/pulse-darwin-amd64",
-        "sha256": "31a6a135c9a60e528e6ac8258820e25cdd78514b96e35e301d5d48d458d24da8"
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.2/pulse-darwin-amd64",
+        "sha256": "c801e3426cd43811915d7e3461a5fb92f0faf071ad9861fcb760a69b060d5eaa"
       },
       "darwin-arm64": {
-        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.1/pulse-darwin-arm64",
-        "sha256": "0189cd188192bea8133aaed5ee2681add34c9dd16dc15581b794c074f9d1b8ee"
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.2/pulse-darwin-arm64",
+        "sha256": "b7b9a3a165eead44931006638513c201add61e59ce70af3088fee66458bdbd49"
       },
       "linux-amd64": {
-        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.1/pulse-linux-amd64",
-        "sha256": "c362c29e4f23c2d77684a03e01fbabcfcc009acb5e24e18a62f226d8b507a280"
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.2/pulse-linux-amd64",
+        "sha256": "91dcceeaef2ffd7b7856ca2301f569f9ef6a3fca72fa503d4e4bbaf805803735"
       },
       "linux-arm64": {
-        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.1/pulse-linux-arm64",
-        "sha256": "785deb22cf3c4883451a8f95d53078eced24b8a06893fd746110c9fc906b9a81"
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.2/pulse-linux-arm64",
+        "sha256": "361513d7e26cef110a0af25cef4b26d5713c967086ed47f80afcbe930dc03610"
       },
       "windows-amd64": {
-        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.1/pulse-windows-amd64.exe",
-        "sha256": "9f80fba472eb4ad92bfd43b3de2bd98c8450de11f2d71cc45fda52124ab4b655"
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.2/pulse-windows-amd64.exe",
+        "sha256": "398a0b9ef5cacf1debe178bd78577fb8a6b31da90c8c8b523373cabee5845bf9"
       },
       "windows-arm64": {
-        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.1/pulse-windows-arm64.exe",
-        "sha256": "e5781ac7471cbd2b23397c06f40222e219877c20cb9201da9b8604125607000f"
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.0-rc.2/pulse-windows-arm64.exe",
+        "sha256": "1ccb290d87cc16ab952d928b63d65c20e3943e9e5ea6e0d8670b12df87fcd332"
       }
     }
   }
