@@ -7,7 +7,7 @@ steps:
   - uses: actions/checkout@v4
   - uses: premex-ab/setup-pulse@v1
     with:
-      version: '0.4.0-rc.2'
+      version: '0.4.1'
   - name: Measure a build
     run: pulse run --name build --output pulse-build.json -- make build
 ```
@@ -37,7 +37,7 @@ The CLI preserves the wrapped command's exit status and reports measurement/uplo
 
 | Name | Kind | Description |
 | --- | --- | --- |
-| `version` | Input | Exact CLI version; default `0.4.0-rc.2`. |
+| `version` | Input | Exact CLI version; default `0.4.1`. |
 | `version` | Output | Installed CLI version. |
 | `path` | Output | Absolute path to the installed executable. |
 
@@ -47,7 +47,7 @@ The executable is added to `PATH` for subsequent steps. Supported targets: Linux
 
 Downloads come from this public repository's `cli-vVERSION` release assets. SHA-256 digests are committed in the action's manifest and checked **before** the executable is made available. Installation rejects unsupported versions/platforms, failed downloads and checksum mismatches. It does not execute the downloaded binary during installation.
 
-CLI `0.4.0-rc.2` is a preview of cross-tool command measurement and Xcode execution timelines. Its source revision and compiler version are recorded in `releases.json` and the CLI release's `build-info.json`. CLI binaries are built from the separate Pulse repository; this repository contains the installer, tests and public binary distribution. The preview is intended for evaluation, and the matching Pulse server execution-model support is required for the timeline UI.
+CLI `0.4.1` includes experiment tags and cross-tool command measurement. Its exact source revision and per-platform build metadata are recorded in the public release assets. Five binaries are mirrored unchanged from the upstream Pulse release; Windows ARM64 is built from the same release tag. The earlier `0.4.0-rc.2` manifest remains available for existing consumers. CLI binaries are built from the separate Pulse repository; this repository contains the installer, tests and public binary distribution.
 
 To add a CLI release, publish the six platform binaries with `SHA256SUMS`, build information and third-party notices, review their hashes into `releases.json`, then run the test matrix before tagging a new action release. Never replace existing release assets. `v1` follows compatible action releases; full SHA pins remain unchanged.
 

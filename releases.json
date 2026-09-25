@@ -28,5 +28,35 @@
         "sha256": "1ccb290d87cc16ab952d928b63d65c20e3943e9e5ea6e0d8670b12df87fcd332"
       }
     }
+  },
+  "0.4.1": {
+    "sourceCommit": "5fe2c0f4e45905aa91951ce238abe27077601fbd",
+    "buildInfo": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.1/build-info.json",
+    "artifacts": {
+      "darwin-amd64": {
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.1/pulse-darwin-amd64",
+        "sha256": "3bc6649388a72a8a25817ae4acd7c127af32e6d2cc07b7929342660af4928b90"
+      },
+      "darwin-arm64": {
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.1/pulse-darwin-arm64",
+        "sha256": "ecde2600e1dbaba7430d9dfb09d704cadb35346c241e6f0ff661129fc5b87c9d"
+      },
+      "linux-amd64": {
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.1/pulse-linux-amd64",
+        "sha256": "cf086ec2ebc15f5542372618d42306e1f33508f0ddd6c8434fee9a1ef343360d"
+      },
+      "linux-arm64": {
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.1/pulse-linux-arm64",
+        "sha256": "5e4182fffe8c741996eb119c6e34cfa42a6625d60ef56f665d2a91dc42f282e6"
+      },
+      "windows-amd64": {
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.1/pulse-windows-amd64.exe",
+        "sha256": "1a58d05ac632a30ed723c14b61154e05f1b17ce4ae89ffad5869e9ed15cf9c13"
+      },
+      "windows-arm64": {
+        "url": "https://github.com/premex-ab/setup-pulse/releases/download/cli-v0.4.1/pulse-windows-arm64.exe",
+        "sha256": "9ba61627a59235ec5307801afb1a77cfda5fdcc0a7747c9d1f0b9cde1b787794"
+      }
+    }
   }
 }
